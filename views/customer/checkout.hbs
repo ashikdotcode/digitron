@@ -1,0 +1,106 @@
+<!--================Checkout Area =================-->
+  <section class="checkout_area padding_top">
+    <div class="container">
+      
+      {{!-- <div class="cupon_area">
+        <div class="check_title">
+          <h2>
+            Have a coupon?
+            <a href="#">Click here to enter your code</a>
+          </h2>
+        </div>
+        <input type="text" placeholder="Enter coupon code" />
+        <a class="tp_btn" href="#">Apply Coupon</a>
+      </div> --}}
+      <div class="billing_details">
+        <div class="row">
+          <div class="col-lg-8">
+            <a class="mb-5" href="/address">Add new address</a>
+            {{#if addressData}}
+            
+            <form id="checkout">
+              
+              
+                   <div class="mt-1">
+                    <h3 class="mt-1">Shipping Address</h3>
+                                <ul class="">
+                                  {{#each addressData}}
+                                    <li>
+                                        <input required value="{{this._id}}" name="addressId"  id="{{this._id}}" type="radio">
+                                        <label for="{{this._id}}">{{this.name}}</label>
+                                    </li>
+                                  {{/each}}
+                                </ul>
+                              
+                            </div>
+                            
+             
+
+              <div class="">
+                <h3>Payment Options</h3>
+                                <ul class="">
+                                    <li>
+                                        <input required value="online" name="payment"  id="online" type="radio">
+                                        <label for="online">Online payment</label>
+                                    </li>
+                                     <li>
+                                        <input required value="cod" name="payment"  id="cod" type="radio">
+                                        <label for="cod">COD</label>
+                                    </li>
+                                </ul>
+                              
+              </div>
+
+            
+           
+            <button class="btn_3 ml-3 mt-5" type="submit" value="Submit">Checkout</button>
+         
+            </form>
+            {{/if}}
+          </div>
+              <div class="col-lg-4">
+            <div class="order_box">
+              <h2>Price Details</h2>
+              <ul class="list list_2">
+                <li>
+                  <a href="#">Price
+                    <span>{{cartSubTotal.[0].subTotal}} Rs</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Delivery charges
+                    <span>40 Rs</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Total Amount
+                    <span>{{cartSubTotal.[0].totalAmount}} Rs</span>
+                  </a>
+                </li>
+              </ul>
+          
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--================End Checkout Area =================-->
+
+
+
+
+<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+
+
+
+    
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+
+
+<script>
+  $("#checkout").validate();
+</script>

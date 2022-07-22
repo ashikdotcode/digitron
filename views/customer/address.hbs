@@ -1,0 +1,156 @@
+<!--================Checkout Area =================-->
+  <section class="checkout_area padding_top">
+    <div class="container">
+      
+      {{!-- <div class="cupon_area">
+        <div class="check_title">
+          <h2>
+            Have a coupon?
+            <a href="#">Click here to enter your code</a>
+          </h2>
+        </div>
+        <input type="text" placeholder="Enter coupon code" />
+        <a class="tp_btn" href="#">Apply Coupon</a>
+      </div> --}}
+      <div class="billing_details">
+        <div class="row">
+          <div class="col-lg-8">
+            <h3>Shipping Address</h3>
+            <form id="" class="row contact_form" action="/address" method="post" >
+              <div class="col-md-6 form-group p_star">
+                <input type="text" class="form-control" id="name" name="name" />
+                <span class="placeholder" data-placeholder="Name"></span>
+              </div>
+              <div class="col-md-6 form-group p_star">
+                <input type="tel" class="form-control" id="mobile" name="mobileNumber" />
+                <span class="placeholder" data-placeholder="10-digit mobile number"></span>
+              </div>
+            
+              <div class="col-md-6 form-group p_star">
+                <input type="tel" class="form-control" id="pincode" name="pinCode" />
+                <span class="placeholder" data-placeholder="Pincode"></span>
+              </div>
+              <div class="col-md-6 form-group p_star">
+                <input type="text" class="form-control" id="locality" name="locality" />
+                <span class="placeholder" data-placeholder="Locality"></span>
+              </div>
+        
+              <div class="col-md-12 form-group p_star">
+                <input style="height:100px;" type="text" class="form-control" id="address" name="address" />
+                <span class="placeholder" data-placeholder="Address(Area and Street)"></span>
+              </div>
+
+              <div class="col-md-6 form-group p_star">
+                <input type="text" class="form-control" id="city" name="cityDistrictTown" />
+                <span class="placeholder" data-placeholder="City"></span>
+              </div>
+              <div class="col-md-6 form-group p_star">
+                 <select name="state" class="form-control">
+                  <option value="State">State</option>
+                  <option value="Kerala">Kerala</option>
+                  <option value="Tamilnadu">Tamilnadu</option>
+                </select>
+              </div>
+            
+              <div class="col-md-6 form-group p_star">
+                <input type="tel" class="form-control" id="landmark" name="landmark" />
+                <span class="placeholder" data-placeholder="Landmark (Optional)"></span>
+              </div>
+              <div class="col-md-6 form-group p_star">
+                <input type="tel" class="form-control" id="alt-mobile" name="alternatePhone" />
+                <span class="placeholder" data-placeholder="Alternate mobile number (Optional)"></span>
+              </div>
+
+              <div class="col-md-6 form-group p_star">
+                 <select name="addressType" class="form-control">
+                  <option value="State">Address Type</option>
+                  <option value="home">Home</option>
+                  <option value="work">Work</option>
+                </select>
+              </div>
+           
+            {{!-- <button class="btn_3 ml-3 mt-5" type="submit" >Save & Proceed</button> --}}
+          <button type="submit">Submit</button>
+            </form>
+          </div>
+          <div class="col-lg-4">
+            <div class="order_box">
+              <h2>Your Order</h2>
+              <ul class="list">
+                <li>
+                  <a href="#">Product
+                    <span>Total</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Fresh Blackberry
+                    <span class="middle">x 02</span>
+                    <span class="last">$720.00</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Fresh Tomatoes
+                    <span class="middle">x 02</span>
+                    <span class="last">$720.00</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Fresh Brocoli
+                    <span class="middle">x 02</span>
+                    <span class="last">$720.00</span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="list list_2">
+                <li>
+                  <a href="#">Subtotal
+                    <span>$2160.00</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Shipping
+                    <span>Flat rate: $50.00</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Total
+                    <span>$2210.00</span>
+                  </a>
+                </li>
+              </ul>
+              {{!-- <div class="payment_item">
+                <div class="radion_btn">
+                  <input type="radio" id="f-option5" name="selector" />
+                  <label for="f-option5">Check payments</label>
+                  <div class="check"></div>
+                </div>
+                <p>
+                  Please send a check to Store Name, Store Street, Store Town,
+                  Store State / County, Store Postcode.
+                </p>
+              </div> --}}
+              {{!-- <div class="payment_item active">
+                <div class="radion_btn">
+                  <input type="radio" id="f-option6" name="selector" />
+                  <label for="f-option6">Paypal </label>
+                  <img src="img/product/single-product/card.jpg" alt="" />
+                  <div class="check"></div>
+                </div>
+                <p>
+                  Please send a check to Store Name, Store Street, Store Town,
+                  Store State / County, Store Postcode.
+                </p>
+              </div> --}}
+            
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--================End Checkout Area =================-->
+
+
+
+
